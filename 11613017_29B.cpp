@@ -139,11 +139,15 @@ int main()
    	}
       ch1:{
       	if(pros>0)
-		  {printf("Student\n");
-		  roundr(student,pros);}
-		if(prof>0)
-		{printf("Faaculty\n");
-		roundr(faculty,prof);}
+	{printf("Student\n");
+	roundr(student,pros);}
+	      else
+		{printf("No. of processes is less than 2");}
+	if(prof>0)
+	{printf("Faaculty\n");
+	roundr(faculty,prof);}
+	      else
+		{printf("No. of processes is less than 2");}
       	}
       }
     else
