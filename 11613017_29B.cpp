@@ -105,7 +105,7 @@ int main()
     	scanf("%d%d",&student[pros].arrival,&student[pros].burst);
     	student[pros].p = pros;
         student[pros].remaining = student[pros].burst;
-        if(student[pros].arrival>120)
+        if(student[pros].arrival>120 ||student[pros].burst<=0 ||student[pros].arrival<0 )
         {pros--;}
 		}
 		else if(id==1)
@@ -114,7 +114,7 @@ int main()
     	scanf("%d%d",&faculty[prof].arrival,&faculty[prof].burst);
     	faculty[prof].p = prof;
         faculty[prof].remaining = faculty[prof].burst;
-        if(faculty[prof].arrival>120)
+        if(faculty[prof].arrival>120 ||faculty[prof].burst<=0 ||faculty[prof].arrival<0)
         {prof--;}
 		}
 		else
