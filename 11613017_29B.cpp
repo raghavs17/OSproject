@@ -86,8 +86,9 @@ int roundr(struct requests x[],int pros)
 }
 int main()
 {
-	SYSTEMTIME str_t;
-	GetSystemTime(&str_t);
+	SYSTEMTIME st = {0}, str_t = {0};
+	GetSystemTime(&st);
+	SystemTimeToTzSpecificLocalTime(NULL, &st, &str_t);
 	if(str_t.wHour==10)
 	{
 		system("cls");
